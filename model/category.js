@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const categorySchema = new mongoose.Schema({
-   username:{type:String,required:true}
+   name:{type:String,required:true}
 },{timestamps:true})
 
 
 
-const categoryModel = mongoose.model("post",categorySchema);
+const categoryModel = mongoose.model("category",categorySchema);
 
 
 
